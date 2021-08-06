@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,81 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            perspective: 1000px;
+        .dav {
+            border-top: 3px solid red;
+            /* text-decoration: none; */
+            line-height: 40px;
+            height: 40px;
+            width: 500px;
+            background-color: blanchedalmond;
         }
 
-        section {
-            width: 255px;
-            height: 380px;
-            margin: 100px auto;
-            position: relative;
-            transform-style: preserve-3d;
-            animation: move 5s linear infinite;
-            background: url(zhuang.jpg) no-repeat;
-            background-size: 255px 380px;
-
-
+        .dav a {
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+            display: inline-block;
+            height: 40px;
+            padding: 0 20px;
         }
 
-        section div {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: url(tu7.jfif) no-repeat;
-        }
-
-        section div:nth-child(1) {
-            transform: translateZ(300px);
-        }
-
-        section div:nth-child(2) {
-            transform: rotateY(60deg) translateZ(300px);
-        }
-
-        section div:nth-child(3) {
-            transform: rotateY(120deg) translateZ(300px);
-        }
-
-        section div:nth-child(4) {
-            transform: rotateY(180deg) translateZ(300px);
-        }
-
-        section div:nth-child(5) {
-            transform: rotateY(240deg) translateZ(300px);
-        }
-
-        section div:nth-child(6) {
-            transform: rotateY(300deg) translateZ(300px);
-        }
-
-        @keyframes move {
-            0% {
-                transform: rotateY(0);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-
-        section:hover {
-        animation-play-state: paused;
+        .dav a:hover {
+            background-color: black;
+            color: blue;
         }
     </style>
 </head>
 
 <body>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
+    <div class="dav">
+        <a href="#">s设置网页</a>
+        <a href="#">手机网</a>
+        <a href="#">移动客户</a>
+    </div>
+
 </body>
 
 </html>
